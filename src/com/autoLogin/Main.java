@@ -8,17 +8,23 @@ import java.io.FileInputStream;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 
-
+//this ismain class
 public class Main {
 
     public static ArrayList ReadData(String pathname) {
         ArrayList strlist = new ArrayList();
         try {
+        	System.out.println("line 11111111");
 
             File filename = new File(pathname);
             InputStreamReader reader = new InputStreamReader(
                     new FileInputStream(filename));
             BufferedReader br = new BufferedReader(reader);
+            
+            System.out.println("line 2222222222");
+            int x=0;//no use ,for git example onle
+            int y=0;//no use ,for git example onle
+            
             int j = 0;
             String line = "";
             while ((line = br.readLine()) != null) {
